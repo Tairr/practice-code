@@ -19,4 +19,13 @@ public class TempTestMain {
 
     }
 
+    public static int findSmallestInt(int[] args) {
+        int result = args[0];
+        for(int i=1;i<args.length;i++){
+            if(args[i]<result){
+                result = args[i];
+            }
+        }
+        return  result;
+    }
 }

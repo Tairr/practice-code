@@ -1,5 +1,6 @@
 package com.kf.practice;
 
+import com.kf.practice.rabbit.HelloSender;
 import com.kf.practice.service.TestInterfaceImp2;
 import com.kf.practice.util.CommonUtils;
 import org.junit.Test;
@@ -63,4 +64,14 @@ public class PracticeApplicationTests {
 	}
 
 
+	/**
+	 * test rabbitmq
+	 */
+	@Autowired
+	private HelloSender helloSender;
+
+	@Test
+	public void testRabbit(){
+		helloSender.send();
+	}
 }
