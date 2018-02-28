@@ -31,6 +31,7 @@ public class TestPhaser2 {
 
         @Override
         public void run() {
+            System.out.println(Thread.currentThread().getName()+" 等待执行任务");
             phaser.awaitAdvance(phaser.getPhase()); // countDownLatch.await()
             System.out.println(Thread.currentThread().getName()+" 执行任务");
         }

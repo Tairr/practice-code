@@ -1,6 +1,7 @@
 package com.kf.practice.controller;
 
 import com.kf.practice.base.BaseController;
+import com.kf.practice.domain.jianshu.SingletonTest;
 import com.kf.practice.exception.ParameterException;
 import com.kf.practice.generics.Room;
 import com.kf.practice.service.TestExceptionService;

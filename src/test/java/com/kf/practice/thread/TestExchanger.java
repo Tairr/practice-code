@@ -34,7 +34,15 @@ public class TestExchanger {
         consumer.start();
 
         producer2.start();
-        //consumer2.start();
+
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        producer2.start();
+//        consumer2.start();
 
 
     }

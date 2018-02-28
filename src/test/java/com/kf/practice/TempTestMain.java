@@ -13,6 +13,14 @@ public class TempTestMain {
 
     public static void main(String[] args) {
 
+        int h =11;
+        String key = "test";
+        System.out.println(" key.hashCode():"+ key.hashCode());
+        System.out.println("h >>> 16:"+(h >>> 16));
+        System.out.println("(h = key.hashCode()) ^ (h >>> 16):"+((h = key.hashCode()) ^ (h >>> 16)));
+        System.out.println((key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16));
+
+        //Class.forName("");
 //        Semaphore
 
 //        SynchronousQueue
