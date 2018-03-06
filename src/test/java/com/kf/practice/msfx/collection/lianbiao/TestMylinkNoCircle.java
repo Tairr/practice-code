@@ -1,5 +1,7 @@
 package com.kf.practice.msfx.collection.lianbiao;
 
+import java.util.Date;
+
 /**
  * @author tangjinhui
  * @Description：
@@ -24,9 +26,9 @@ public class TestMylinkNoCircle {
         myLink.addNode(1);
 
         myLink.addNode(34);
-//        for (int i = 0; i <10000 ; i++) {
-//            myLink.addNode(34);
-//        }
+        for (int i = 0; i <5000 ; i++) {
+            myLink.addNode(34);
+        }
 
 
 
@@ -43,17 +45,17 @@ public class TestMylinkNoCircle {
 
         MyLink lin2 = myLink;
 
-        long  start = System.currentTimeMillis();
+        long  start = new Date().getTime();
         myLink.reversetNodeDgFix(myLink.head,myLink.head.next);
-        System.out.println("cost:"+(System.currentTimeMillis() - start));
+        System.out.println("cost:"+(new Date().getTime() - start));
         System.out.println("after reversetNodeDgFix: ");
-        myLink.printLink();
+      //  myLink.printLink();
 
-        long  start2 = System.currentTimeMillis();
-        lin2.reversetNode(lin2.head);
-        System.out.println("cost:"+(System.currentTimeMillis() - start2));
-        System.out.println("after reversetNodeDgFix: ");
-        myLink.printLink();
+//        long  start2 = System.currentTimeMillis();
+//        lin2.reversetNode(lin2.head);
+//        System.out.println("cost:"+(System.currentTimeMillis() - start2));
+//        System.out.println("after reversetNodeDgFix: ");
+//        myLink.printLink();
     }
 
 }

@@ -8,8 +8,19 @@ package com.kf.practice.msfx.collection.lianbiao;
 public class MyLink {
 
     Node head =null;
+
     private static  int count = 1;
     private int reverPrintCount = 1;
+
+
+    class Test{
+
+        Test next = null;
+
+        public Test(Test next) {
+            this.next = next;
+        }
+    }
 
     class Node{
 
