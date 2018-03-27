@@ -1,9 +1,7 @@
 package com.kf.practice.hxjs1.unit8.collection.hash;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author tangjinhui
@@ -33,6 +31,8 @@ public class TestHash {
             Map.Entry entry = (Map.Entry)i.next();
             System.out.println("hashcode:"+entry.hashCode()+",value:"+entry.getKey());
         }
+
+        Set set = new HashSet();
 
     }
 
